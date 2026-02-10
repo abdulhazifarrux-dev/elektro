@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(./i.webp);
+    background-size: cover; /* ekran to‘liq yopadi */
+    background-position: center; /* markazda turadi */
+    background-repeat: no-repeat; /* takrorlanmaydi */
+    background-attachment: fixed; /* scroll effekti */    
+}
+
+/* HEADER */
+header {
+    background: #0d1b2a;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+/* LOGO */
+.dd1 {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dd1 h1 {
+    font-size: 40px;
+    color: #00b4d8;
+}
+
+/* MENU ITEMS */
+.he1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+/* LINKS (BUTTON STYLE) */
+.he1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 2px solid #00b4d8;
+    background: #1b263b;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+/* HOVER EFFECT */
+.he1 a:hover {
+    background: #00b4d8;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* MAIN TEXT */
+div h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 32px;
+    color: #00b4d8;
+}
+
+/* 📱 MOBILE STYLE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .dd1 h1 {
+        font-size: 20px;
+    }
+
+    .he1 {
+        width: 100%;
+    }
+
+    .he1 a {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        margin: 4px 0;
+    }
+}
